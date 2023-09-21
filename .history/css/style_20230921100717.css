@@ -108,7 +108,6 @@ form .name-details .field:last-child {
     top: 70%;
     transform: translateY(-50%);
     cursor: pointer;
-    color: #ccc;
 }
 
 .form .link {
