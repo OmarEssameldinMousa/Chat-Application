@@ -136,7 +136,7 @@ form .name-details .field:last-child {
     justify-content: center;
     justify-content: space-between;
     border-bottom: 1px solid #e6e6e6;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
 
 }
 
@@ -154,7 +154,6 @@ form .name-details .field:last-child {
     height: 50px;
     width: 50px;
 }
-
 
 :is(.users, .users-list) .details {
     color: #000;
@@ -209,27 +208,7 @@ form .name-details .field:last-child {
     font-size: 17px;
 }
 
-.users-list {
-    max-height: 350px;
-    overflow-y: auto;
-}
-
-.users-list::-webkit-scrollbar {
-    width: 0px;
-}
-
-
-.users-list a {
-    padding-right: 10px;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-    border-bottom-color: #f1f1f1;
-}
-
-.users-list a:last-child {
-    border: none;
-    margin-bottom: 0px;
-}
+.users-list {}
 
 .users-list a .content img {
     height: 40px;
@@ -237,17 +216,7 @@ form .name-details .field:last-child {
 }
 
 
-.users header .content p {
-    color: #67676a;
-}
-
 .users-list a .status-dot {
-    font-size: 12px;
-    color: #67676a;
-}
-
-/* to use the online status */
-.users-list a .status-dot.offline {
     font-size: 12px;
     color: #468669;
 }

@@ -20,9 +20,8 @@
     "axe/name-role-value": [
       "default",
       {
-        "button-name": "off"
+        "button-name": "on"
       }
-    ],
-    "button-type": "off"
+    ]
   }
 }
