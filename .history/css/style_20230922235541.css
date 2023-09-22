@@ -214,7 +214,7 @@ form .name-details .field:last-child {
     overflow-y: auto;
 }
 
-:is(.users-list, .chat-box)::-webkit-scrollbar {
+.users-list::-webkit-scrollbar {
     width: 0px;
 }
 
@@ -284,17 +284,12 @@ form .name-details .field:last-child {
     padding: 10px 30px 20px 30px;
     box-shadow: inset 0 32px 32px -32px rgb(0 0 0/ 5%),
         inset 0 -32px 32px -32px rgb(0 0 0/ 5%);
-    overflow-y: auto;
-}
-
-.chat-box .chat {
-    margin: 15px 0;
 }
 
 .chat-box .chat p {
-    word-wrap: break-word;
     padding: 8px 16px;
-    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 10%), 0px 0px 20px 0px rgb(0 0 0 / 10%);
+    box-shadow: 0 32px 32px -32px rgb(0 0 0/ 10%),
+        0 -32px 32px -32px rgb(0 0 0/ 10%);
 }
 
 .chat-box .outgoing {
@@ -304,7 +299,7 @@ form .name-details .field:last-child {
 .outgoing .details {
     margin-left: auto;
     max-width: calc(100% - 130px);
-    /* margin-bottom: 15px; */
+    margin-bottom: 15px;
 }
 
 .outgoing .details p {
@@ -316,7 +311,7 @@ form .name-details .field:last-child {
 
 .chat-box .incoming {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .chat-box .incoming img {
@@ -324,41 +319,9 @@ form .name-details .field:last-child {
     width: 35px;
 }
 
-.incoming .details {
-    margin-left: 10px;
-    margin-right: auto;
-    max-width: calc(100% - 130px);
-}
-
 .incoming .details p {
     background-color: #fff;
     align-items: center;
     color: #333;
     border-radius: 18px 18px 18px 0;
-}
-
-.chat-area .typing-area {
-    padding: 18px 30px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.typing-area input {
-    height: 45px;
-    width: calc(100% - 58px);
-    font-size: 17px;
-    border: 1px solid #ccc;
-    padding: 0 13px;
-    border-radius: 5px 0 0 5px;
-    outline: none;
-}
-
-.typing-area button {
-    width: 55px;
-    border: none;
-    outline: none;
-    border-radius: 0 5px 5px 0;
-    background-color: #333;
-    color: #fff;
-    cursor: pointer;
 }
