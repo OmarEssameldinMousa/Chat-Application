@@ -30,7 +30,7 @@
                     <input type="submit" value="Continue to Chat">
                 </div>
             </form>
-            <div class="link">Not signed up yet? <a href="">Signup now</a></div>
+            <div class="link">Not signed up yet? <a href="index.php">Signup now</a></div>
         </section>
     </div>
 
