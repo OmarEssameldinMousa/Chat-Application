@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realtime Chat App</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <section class="form login">
+            <header>RealTime Cat App</header>
+            <form action="#">
+                <div class="error-txt"></div>
+                <div class="field input">
+                    <label for="">Email Address</label>
+                    <input type="text" placeholder="Email Address">
+                </div>
+                <div class="field input">
+                    <label for="">password</label>
+                    <input type="text" placeholder="Enter Your password">
+                    <i class="fas fa-eye"></i>
+                </div>
+
+                <div class="field button">
+                    <input type="submit" value="Continue to Chat">
+                </div>
+            </form>
+            <div class="link">Not signed up yet? <a href="index.php">Signup now</a></div>
+        </section>
+    </div>
+
+    <script src="javascript/pass-show-hide.js"></script>
+</body>
+
+</html>

@@ -15,14 +15,14 @@
         <section class="form login">
             <header>RealTime Cat App</header>
             <form action="#">
-                <div class="error-txt">Tis is an error message!</div>
+                <div class="error-txt"></div>
                 <div class="field input">
                     <label for="">Email Address</label>
-                    <input type="text" placeholder="Email Address">
+                    <input type="text" name="email" placeholder="Email Address">
                 </div>
                 <div class="field input">
                     <label for="">password</label>
-                    <input type="text" placeholder="Enter Your password">
+                    <input type="password" name="password" placeholder="Enter Your password">
                     <i class="fas fa-eye"></i>
                 </div>
 
@@ -35,6 +35,7 @@
     </div>
 
     <script src="javascript/pass-show-hide.js"></script>
+    <script src="javascript/login.js"></script>
 </body>
 
 </html>
