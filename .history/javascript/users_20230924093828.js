@@ -6,7 +6,6 @@ searchBtn.onclick = () => {
     searchBar.classList.toggle("active");
     searchBar.focus();
     searchBtn.classList.toggle("active");
-    searchBar.value = "";
 }
 
 searchBar.onkeyup = () => {
@@ -36,9 +35,7 @@ setInterval(() => {
     xhr.onload = () => {
         if (xhr.readyState == 4 && xhr.status == 200) {
             let data = xhr.response;
-            if (!searchBar.classList.contains("active")) {
-                usersList.innerHTML = data;
-            }
+            usersList.innerHTML = data;
         }
     }
     xhr.send();

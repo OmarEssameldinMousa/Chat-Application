@@ -6,7 +6,6 @@ searchBtn.onclick = () => {
     searchBar.classList.toggle("active");
     searchBar.focus();
     searchBtn.classList.toggle("active");
-    searchBar.value = "";
 }
 
 searchBar.onkeyup = () => {
@@ -21,7 +20,9 @@ searchBar.onkeyup = () => {
     xhr.onload = () => {
         if (xhr.readyState == 4 && xhr.status == 200) {
             let data = xhr.response;
-            usersList.innerHTML = data;
+            if (!searchBar.classList.contains("active")) {
+                usersList.innerHTML = data;
+            }
         }
     }
     xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
@@ -36,9 +37,7 @@ setInterval(() => {
     xhr.onload = () => {
         if (xhr.readyState == 4 && xhr.status == 200) {
             let data = xhr.response;
-            if (!searchBar.classList.contains("active")) {
-                usersList.innerHTML = data;
-            }
+            usersList.innerHTML = data;
         }
     }
     xhr.send();
