@@ -17,7 +17,7 @@ if (!isset($_SESSION['unique_id'])) {
                 if (mysqli_num_rows($sql) > 0) {
                     $row = mysqli_fetch_assoc($sql);
                 }
-                ?>
+                ?>x
                 <div class="content">
                     <img src="images/<?= $row['img'] ?>" alt="">
                     <div class="details">

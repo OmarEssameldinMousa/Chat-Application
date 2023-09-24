@@ -31,6 +31,23 @@ if (!isset($_SESSION['unique_id'])) {
             <div class="chat-box">
 
 
+
+                <div class="chat incoming">
+                    <img src="images/124374760.jpg" alt="">
+                    <div class="details">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicin ipsum.</p>
+                    </div>
+                </div>
+
+
+                <div class="chat outgoing">
+                    <div class="details">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicin ipsum.</p>
+                    </div>
+                </div>
+
+
+
             </div>
 
             <form action="" class="typing-area" autocomplete="off">
