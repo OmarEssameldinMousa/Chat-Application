@@ -17,8 +17,6 @@ while ($row = mysqli_fetch_assoc($sql)) {
 
     ($outgoing_id == $row2['outgoing_msg_id']) ? $you = "You: " : $you = '';
 
-    ($row['status'] == "Offline now") ? $offline = "offline" : $offline = "";
-
     $output .= '<a href="chat.php?user_id=' . $row['unique_id'] . '">
                     <div class="content">
                         <img src="images/' . $row['img'] . '" alt="">
@@ -27,6 +25,6 @@ while ($row = mysqli_fetch_assoc($sql)) {
                             <p>' . $you . $msg . '</p>
                         </div>
                     </div>
-                    <div class="status-dot ' . $offline . '"><i class="fas fa-circle"></i></div>
+                    <div class="status-dot"><i class="fas fa-circle"></i></div>
                     </a>';
 }

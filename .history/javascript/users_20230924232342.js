@@ -1,6 +1,7 @@
 const searchBar = document.querySelector(".users .search input"),
     searchBtn = document.querySelector(".users .search button"),
     usersList = document.querySelector(".users .users-list");
+// some additional stylying i forgot to do
 
 searchBtn.onclick = () => {
     searchBar.classList.toggle("active");
@@ -43,3 +44,7 @@ setInterval(() => {
     }
     xhr.send();
 }, 100);
+
+
+
+

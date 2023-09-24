@@ -13,7 +13,8 @@
       "default",
       {
         "ignore": [
-          "-ms-filter"
+          "-ms-filter",
+          "-webkit-text-size-adjust"
         ]
       }
     ],

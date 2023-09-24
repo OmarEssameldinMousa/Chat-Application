@@ -26,7 +26,7 @@ chatBox.onmouseenter = () => {
     chatBox.classList.add("active")
 }
 
-chatBox.onmouseleave = () => {
+chatBox.onmouseenter = () => {
     chatBox.classList.remove("active")
 }
 
